@@ -1,0 +1,178 @@
+body
+{
+    background-color: aliceblue;
+    font-family: 'Mulish', sans-serif;
+}
+
+h1, h2
+{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+
+}
+
+h3
+{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    margin-bottom: 1%;
+}
+
+p
+{
+    line-height: 1.5em;
+    text-align:justify;
+}
+
+hr
+{
+    width:100%;
+    border-width:3px;
+    margin-bottom:1em;
+}
+
+img
+{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+a
+{
+    color:#50858b;
+}
+
+#footer-parent
+{
+    display: grid;
+    background-color: #50858b;
+}
+
+#footer
+{
+    margin:auto;
+    text-align: center;
+    color:white;
+}
+
+#footer>p
+{
+    font-size: 0.7em;
+    margin:5px;
+    text-align: center;
+}
+
+#footer a
+{
+    color:#a1d2ce;
+}
+
+#footer a:hover
+{
+    color:white;
+}
+
+nav a
+{
+    margin:4px;
+    color:white;
+    text-decoration: none;
+}
+
+#navbar h1
+{
+    margin:2px;
+}
+
+#navbar
+{
+    background-color: #5497a7;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+#title
+{
+    display:inline-block;
+    margin-right:30%;
+    transition: font-size 0.5s;
+}
+
+#title:hover
+{
+    font-size: 1.1em;
+}
+
+#nav-active
+{
+    background-color: #78cad2;
+    color:black;
+}
+
+#title~a
+{
+    border-radius:4px;
+    padding:10px;
+    transition: padding 0.5s;
+}
+
+#title~a:hover
+{
+    background-color: #a1d2ce;
+    color:black;
+    padding: 13px;
+}
+
+.section-title
+{
+    margin-bottom:5px;
+}
+
+button
+{
+    background-color:#50858b;
+    font-weight: bold;
+    color:white;
+    padding:10px;
+    border-radius:4px;
+    transition: padding 0.5s;
+    border:none;
+}
+
+button:hover
+{
+    background-color: #78cad2;
+    color:black;
+    padding:15px;
+    cursor: pointer;
+}
+
+/*the following media queries make the navbar responsive together with the javascript in general-script.js*/
+@media only screen and (max-width:1100px)
+{
+    #title
+    {
+        margin-right:20%;
+    }
+}
+
+@media only screen and (max-width:900px)
+{
+    #title
+    {
+        margin-right: 4px;
+    }
+
+    #navbar>a
+    {
+        display:none;
+    }
+
+    a#title, a#nav-active
+    {
+        display:block;
+    }
+
+}

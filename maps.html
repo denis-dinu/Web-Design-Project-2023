@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Visit Parga</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="Parga, Greece, Holiday">
+        <meta name="description" content="Maps Parga holiday hestination">
+        <meta name="author" content="Denis-Mihai Dinu">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Mulish:wght@500&display=swap');
+        </style>
+        <link rel="stylesheet" href="general-styles.css">
+        <link rel="stylesheet" href="maps-styles.css">
+
+        <script src="https://kit.fontawesome.com/386d2ce82e.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="container">
+            <nav id="navbar">
+                <a href="homepage.html" id="title"><h1>PARGA</h1></a>
+                <a href="./why-visit.html" class="nav">Why visit?</a>
+                <a href="./travel-info.html" class="nav">Travel info</a>
+                <a href="./what-to-do.html" class="nav">What to do?</a>
+                <a href="./gallery.html" class="nav">Gallery</a>
+                <a href="#" class="nav" id="nav-active">Maps</a>
+            </nav>
+
+            <div id="buttons">
+                <button class="active-btn" id="hotels-btn">Hotels <i class="fa-solid fa-bed"></i></button>
+                <button id="beaches-btn">Beaches <i class="fa-solid fa-umbrella-beach"></i></button>
+                <button id="shops-btn">Shops <i class="fa-solid fa-cart-shopping"></i></button>
+                <button id="restaurants-btn">Restaurants <i class="fa-solid fa-utensils"></i></button>
+            </div>
+            
+            <div id="map-hotels" class="map active-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6000.313794766769!2d20.396675469690052!3d39.28670566224568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sparga%20hotels!5e0!3m2!1sen!2sie!4v1681698245498!5m2!1sen!2sie" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div id="map-beaches" class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d27135.29931982906!2d20.372647658806684!3d39.28779477593136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sparga%20beaches!5e0!3m2!1sen!2sie!4v1681698800952!5m2!1sen!2sie" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div id="map-shops" class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6176.358900904683!2d20.396908923326258!3d39.28418070200662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sparga%20shops!5e0!3m2!1sen!2sie!4v1681698873150!5m2!1sen!2sie" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div id="map-restaurants" class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6176.3691729082875!2d20.397230787589695!3d39.284064215179576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sparga%20restaurants!5e0!3m2!1sen!2sie!4v1681698919929!5m2!1sen!2sie" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+
+            <div id="footer-parent">
+                <footer id="footer">
+                    <p>Learn more about Parga and book your holiday now <a href="https://www.greeka.com/epirus/parga/" target="_blank">here</a></p>
+                    <p>Created by Denis-Mihai Dinu | <a href="mailto:denis-mihai_dinu@ucdconnect.ie">denis-mihai_dinu@ucdconnect.ie</a></p>
+                </footer>
+            </div>
+        </div>
+
+        <script src="responsive-navbar.js"></script>
+        <script src="maps-script.js"></script>
+        
+    </body>
+</html>

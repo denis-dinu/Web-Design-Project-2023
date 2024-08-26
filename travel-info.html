@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Visit Parga</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="Parga, Greece, Holiday">
+        <meta name="description" content="Parga travel info">
+        <meta name="author" content="Denis-Mihai Dinu">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Mulish:wght@500&display=swap');
+        </style>
+        <link rel="stylesheet" href="general-styles.css">
+        <link rel="stylesheet" href="travel-info-styles.css">
+
+        <script src="https://kit.fontawesome.com/386d2ce82e.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="container">
+            <nav id="navbar">
+                <a href="homepage.html" id="title"><h1>PARGA</h1></a>
+                <a href="./why-visit.html" class="nav">Why visit?</a>
+                <a href="#" class="nav" id="nav-active">Travel info</a>
+                <a href="./what-to-do.html" class="nav">What to do?</a>
+                <a href="./gallery.html" class="nav">Gallery</a>
+                <a href="./maps.html" class="nav">Maps</a>
+            </nav>
+    
+            <div id="section1">
+                <h2 class="section-title">Getting to Parga</h2>
+                <hr>
+
+                <p>
+                    Once you get to Parga, finding things to do and enjoy is very easy, but how do you actually get there? Unfortunately, this might be
+                    the hardest thing to plan about your trip, as Parga doesn't currently have an airport, but don't let this discourage you, as there are
+                    many ways to get to Parga from other places in Greece. There are two airports nearby, Ioannina National Airport (103 km away) and Aktion National Airport in Preveza (65 km away),
+                    another bigger airport in Corfu that can help you get there, as well as buses, ferries and car rental services that can link Athens to Parga.
+                    Click the button below to view details for a list of proposed routes that can help you plan your trip to Parga.
+                </p>
+                <button id="show">Show routes</button>
+
+                <div id="extra">
+                    <h3><i class="fa-solid fa-plane"></i> Route 1 - Ioannina National Airport</h3>
+                    <p>The airport of Ioannina receives daily flights from Athens, but no international flights. From there, only a 2 hours drive separates you from Parga. There are taxis which can take you
+                        straight from the airport to your hotel in Parga (you can also book one in advance at 0030 26840 32855 or 0030 694 8738 847), but a cheaper way would probably be taking a bus.
+                    </p>
+
+                    <h3><i class="fa-solid fa-plane"></i> Route 2 - Aktion National Airport in Preveza</h3>
+                    <p>The airport of Aktion-Preveza operates only in summer, during months of peak demand and receives charter flights from abroad, but no flights from other
+                        parts of Greece. It is the closest to Parga, at only one hour of driving away. Again, taxis are available but you can also book a transfer from Preveza to
+                        Parga <a href="https://transfers.greeka.com" target="_blank">here</a>.
+                    </p>
+
+                    <h3><i class="fa-solid fa-plane"></i> Route 3 - A nearby international airport like Ioannis Kapodistrias Airport in Corfu</h3>
+                    <p>Corfu is an island in the Ionian sea which has an airport that conveniently receives both domestic flights from Athens or Thessaloniki and charter flights from
+                        many parts of Europe. After getting to Corfu, you'll want to take a ferry to Igoumenitsa and then a bus to Parga.
+                    </p>
+
+                    <h3><i class="fa-solid fa-car"></i> / <i class="fa-solid fa-bus"></i> Route 4 - Car/bus from Athens airport</h3>
+                    <p>Being the capital of Greece, the airport in Athens regularly receives flights from all over the world. The challenging part is getting from Athens to Parga.
+                        Renting a car would be recommended here, as it would allow for the greatest flexibility and comfort for your journey, and you'll also be able to check out some 
+                        great places near Parga easily later on during your vacation. Here's how to get from Athens to Parga by car: 
+                        <!-- The following text content is taken from: https://www.greeka.com/epirus/parga/travel/ -->
+                        drive through the National Greek Road Athens - Corinth and after the Corinth Canal you have to follow the route to Patra. 
+                        Afterwards, you need to drive through the National Greek Roads Olimpia and Ionia. In other words, after Patra you will pass by Mesolongi, Amfilochia and Arta among other places. 
+                        The distance between Athens and Parga is about 433 km. Alternatively, you can take the bus to Preveza-Parga which departs from Kifissos Bus Station in Athens and the trip is about 10 hours.
+                    </p>
+
+                    <h3><i class="fa-solid fa-ferry"></i> Route 5 - Bring your own car by ferry!</h3>
+                    <!-- The following text content is taken from: https://www.greeka.com/greece-travel/ -->
+                    <p>Ferry companies are operating between Italy and Greece all year round. Particularly there are ferries from Trieste, Venice, Ancona, Bari and Brindisi in Italy to Patra, Igoumenitsa, Corfu and Kefalonia in Greece, 
+                        facilitating European visitors who want to come with their car.
+                    </p>
+
+                    <button id="hide">Hide routes</button>
+
+                </div>
+
+            </div>
+
+            <div id="section2">
+                <div id="section2-title">
+                    <h2 class="section-title">Accommodation and hotels</h2>
+                    <hr>
+                </div>
+                
+                <div id="sidebar">
+                    <p id="p1">Filter accommodation suggestions based on:</p>
+                    
+                    <div id="prices">
+                    <p class="filter-category">Price (for a single adult)</p>
+                    <p class="option"><input type="radio" value="100" name="price">at most 100&euro;/night</p>
+                    <p class="option"><input type="radio" value="70" name="price">at most 70&euro;/night</p>
+                    <p class="option"><input type="radio" value="50" name="price">at most 50&euro;/night</p>
+                    <p class="option"><input type="radio" value="1000" name="price">any price</p>
+                    <!-- Value attribute holds maximum value in the price range -->
+                    </div>
+                    <p id="p2">Note that prices will vary depending on the time of your journey and the type of room chosen and the prices displayed here are simply estimates.</p>
+
+                    <div id="locations">
+                    <p class="filter-category">Location</p>
+                    <p class="option"><input type="radio" value="town" name="location">Town</p>
+                    <p class="option"><input type="radio" value="agios" name="location">Agios Ioannis</p>
+                    <p class="option"><input type="radio" value="valtos" name="location">Valtos</p>
+                    <p class="option"><input type="radio" value="lichnos" name="location">Lichnos</p>
+                    <p class="option"><input type="radio" value="any" name="location">any location</p>
+                    </div>
+
+                    <div id="ratings">
+                    <p class="filter-category">Rating</p>
+                    <p class="option"><input type="radio" value="3" name="rating">at least 3 <i class="fa-solid fa-star"></i></p>
+                    <p class="option"><input type="radio" value="4" name="rating">only 4 <i class="fa-solid fa-star"></i></p>
+                    <p class="option"><input type="radio" value="-1" name="rating">any rating</p>
+                    </div>
+                    <button id="filter">Filter hotels</button>
+                </div>
+    
+                <div id="hotels" data-price="125" data-location="agios" data-rating="4">
+                    <!-- All images in this section taken either from https://www.greeka.com/epirus/parga/hotels/ or https://www.booking.com -->
+                    <div class="hotel" data-price="125" data-location="agios" data-rating="4">
+                        <img src="./images/hotel-racconto.jpg" alt="Racconto Boutique">
+                        <p class="flag"><i class="fa-solid fa-circle-exclamation"></i> Great Deal <i class="fa-solid fa-circle-exclamation"></i></p>
+                        <h3>Racconto Boutique</h3>
+                        <p>Racconto Boutique Design Hotel is newly built, elegantly furnished, and modern, with spacious rooms and suites that have a bright atmosphere and can house 2 or 3 adults. Each one of its luxurious units has been carefully designed in order to offer an amazing setting for your vacation in Parga. The resort is situated in a peaceful and tranquil area with great mountain views, not far from the beach or the center of Parga.</p>
+                        <!-- Paragraph taken from: https://www.greeka.com/epirus/parga/hotels/location-agios-ioannis/racconto/ -->
+                        <p class="details"><span>Location</span>: Agios Ioannis</p>
+                        <p class="details"><span>Rating</span>: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                        <p class="details"><span>Price</span>: 125&euro;/night for an adult</p>
+                        <p class="details"><a href="https://www.racconto-hotel.com" target="_blank">More information and booking details</a></p>
+                    </div>
+
+                    <div class="hotel" data-price="70" data-location="town" data-rating="3">
+                        <img src="./images/hotel-lemon.jpg" alt="Lemon Tree Hotel">
+                        <p class="flag"><i class="fa-solid fa-circle-exclamation"></i> Great Deal <i class="fa-solid fa-circle-exclamation"></i></p>
+                        <h3>Lemon Tree</h3>
+                        <p>Comfortable studios and rooms for 2-4 guests are available at Lemon Tree Hotel, which is located in a calm, mountainous area, close to the center and the beach of Parga. The interior design of the hotel is minimal and modern, with numerous amenities that will make your accommodation experience truly pleasant. Its unit has its own balcony or terrace for amazing views of the landscape.</p>
+                        <!-- Paragraph taken from: https://www.greeka.com/epirus/parga/hotels/location-town/lemon-tree/ -->
+                        <p class="details"><span>Location</span>: Town</p>
+                        <p class="details"><span>Rating</span>: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                        <p class="details"><span>Price</span>: 70&euro;/night for an adult</p>
+                        <p class="details"><a href="https://www.booking.com/hotel/gr/lemon-tree.en-gb.html" target="_blank">More information and booking details</a></p>
+                    </div>
+
+                    <div class="hotel" data-price="50" data-location="town" data-rating="2">
+                        <img src="./images/hotel-acropol.jpg" alt="Acropol Hotel">
+                        <p class="flag"><i class="fa-solid fa-circle-exclamation"></i> Great Deal <i class="fa-solid fa-circle-exclamation"></i></p>
+                        <h3>Acropol</h3>
+                        <p>Tucked away in the narrow winding streets of Parga's old town, when this small family-run hotel opened its doors in 1884 it was the first in the town. Each room has a balcony, with comfortable wooden furniture, which either looks out over the breakfast terrace or the street below and some offer partial views of the 14th-century castle above the town.</p>
+                        <!-- Paragraph taken from: https://www.greeka.com/epirus/parga/hotels/location-town/acropol/ -->
+                        <p class="details"><span>Location</span>: Town</p>
+                        <p class="details"><span>Rating</span>: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                        <p class="details"><span>Price</span>: 50&euro;/night for an adult</p>
+                        <p class="details"><a href="https://www.acropolhotel.com.gr" target="_blank">More information and booking details</a></p>
+                    </div>
+
+                    <div class="hotel" data-price="55" data-location="town" data-rating="3">
+                        <img src="./images/hotel-golfo.jpg" alt="Golfo Beach Hotel">
+                        <p class="flag"><i class="fa-solid fa-circle-exclamation"></i> Great Deal <i class="fa-solid fa-circle-exclamation"></i></p>
+                        <h3>Golfo Beach</h3>
+                        <p>In a prime location in the centre of Parga, Golfo Beach is a sustainable aparthotel, which offers free WiFi, a garden and free private parking for guests who drive. This beachfront property offers access to a patio. Featuring a private entrance, the aparthotel allows guests to maintain their privacy. An à la carte, continental or Full English/Irish breakfast can be enjoyed at the property.</p>
+                        <!-- Paragraph taken from: https://www.booking.com/hotel/gr/golfo-beach-parga.en-gb.html -->
+                        <p class="details"><span>Location</span>: Town</p>
+                        <p class="details"><span>Rating</span>: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                        <p class="details"><span>Price</span>: 55&euro;/night for an adult</p>
+                        <p class="details"><a href="https://www.booking.com/hotel/gr/golfo-beach-parga.en-gb.html" target="_blank">More information and booking details</a></p>
+                    </div>
+
+                    <div class="hotel" data-price="100" data-location="valtos" data-rating="4">
+                        <img src="./images/hotel-valtos.jpg" alt="Valtos Beach Hotel">
+                        <p class="flag"><i class="fa-solid fa-circle-exclamation"></i> Great Deal <i class="fa-solid fa-circle-exclamation"></i></p>
+                        <h3>Valtos Beach</h3>
+                        <p>Family rooms, apartments, villas with a large housing capacity, and regular double rooms are all available at Valtos Beach Hotel, very close to the beach. The hotel offers the opportunity of staying in a unique environment that combines both the sea and the forest. You will find elegantly decorated rooms of different styles, with numerous amenities and private balconies with a nice view.</p>
+                        <!-- Paragraph taken from: https://www.greeka.com/epirus/parga/hotels/location-valtos/valtos-beach/ -->
+                        <p class="details"><span>Location</span>: Valtos</p>
+                        <p class="details"><span>Rating</span>: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                        <p class="details"><span>Price</span>: 100&euro;/night for an adult</p>
+                        <p class="details"><a href="https://www.valtosbeach.gr" target="_blank">More information and booking details</a></p>
+                    </div>
+
+                    <div class="hotel" data-price="50" data-location="town" data-rating="4">
+                        <img src="./images/hotel-inn.jpg" alt="Parga Inn Suites">
+                        <p class="flag"><i class="fa-solid fa-circle-exclamation"></i> Great Deal <i class="fa-solid fa-circle-exclamation"></i></p>
+                        <h3>Parga Inn</h3> 
+                        <p>Parga Inn Suites offers one of the most impressive views of the town of Parga, the sea, and the natural landscape of the area. This amazing resort is situated very close to some of the most important local landmarks and the historic center of Parga. You will find double or twin rooms, as well as apartments that can accommodate up to 6 people and are spacious, with a modern design.</p>
+                        <!-- Paragraph taken from: https://www.greeka.com/epirus/parga/hotels/location-town/inn/ -->
+                        <p class="details"><span>Location</span>: Town</p>
+                        <p class="details"><span>Rating</span>: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                        <p class="details"><span>Price</span>: 50&euro;/night for an adult</p>
+                        <p class="details"><a href="https://www.pargainn.gr/en" target="_blank">More information and booking details</a></p>
+                    </div>
+
+                    <div class="hotel" data-price="55" data-location="town" data-rating="2">
+                        <img src="./images/hotel-nectarios.jpg" alt="Hotel San Nectarios">
+                        <p class="flag"><i class="fa-solid fa-circle-exclamation"></i> Great Deal <i class="fa-solid fa-circle-exclamation"></i></p>
+                        <h3>San Nectarios</h3>
+                        <p>Hotel San Nectarios is a modern hotel in the centre of the authentic Greek town of Parga, just 200 m from the picturesque harbour and 2 excellent local beaches. The Venetian Castle is 700 m away. Hotel San Nectarios has en suite rooms with private balconies that offer views either of the surrounding hills or the sea and the Venetian Castle.</p>
+                        <!-- Paragraph taken from: https://www.booking.com/hotel/gr/san-nectarios.en-gb.html?aid=303948&label=parga-AxHyuw%2A1b1%2A53GUD1kx_JgS553317122150%3Apl%3Ata%3Ap1140%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-2036472130%3Alp1007850%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Yf5EcukO1MOGLSSAuId8ToA&sid=da4f482624d41cb2d2351aef6aa96ec9 -->
+                        <p class="details"><span>Location</span>: Town</p>
+                        <p class="details"><span>Rating</span>: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                        <p class="details"><span>Price</span>: 55&euro;/night for an adult</p>
+                        <p class="details"><a href="https://parganectarios.com" target="_blank">More information and booking details</a></p>
+                    </div>
+
+                    <div class="hotel" data-price="75" data-location="agios" data-rating="4">
+                        <img src="./images/hotel-f&s.jpg" alt="F&S Suites">
+                        <p class="flag"><i class="fa-solid fa-circle-exclamation"></i> Great Deal <i class="fa-solid fa-circle-exclamation"></i></p>
+                        <h3>F & S</h3>
+                        <p>F & S Lounge Suites are situated about 1 kilometer away from Parga, in a quiet and serene area. They are designed to offer luxurious accommodation in a modern environment with lavish amenities and a minimalist, yet sophisticated design. F & S Lounge Suites are also famous for their exceptional homemade breakfast, made with top-quality ingredients.</p>
+                        <!-- Paragraph taken from: https://www.greeka.com/epirus/parga/hotels/location-agios-ioannis/f-and-s-lounge/ -->
+                        <p class="details"><span>Location</span>: Agios Ioannis</p>
+                        <p class="details"><span>Rating</span>: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                        <p class="details"><span>Price</span>: 75&euro;/night for an adult</p>
+                        <p class="details"><a href="https://www.booking.com/hotel/gr/f-amp-s-lounge-suites.en-gb.html" target="_blank">More information and booking details</a></p>
+                    </div>
+
+                    <div class="hotel" data-price="70" data-location="valtos" data-rating="3">
+                        <img src="./images/hotel-icons.jpg" alt="Icons Experience Suites">
+                        <p class="flag"><i class="fa-solid fa-circle-exclamation"></i> Great Deal <i class="fa-solid fa-circle-exclamation"></i></p>
+                        <h3>Icons Experience</h3>
+                        <p>A modern interior design with wooden furniture, a lush green garden, and a yard covered with grass make the environment at Icons Experience seem really appealing. This wonderful resort can be found approximately 700 meters away from the beach of Valtos and it offers total privacy, comfort, and nice views of the surroundings.</p>
+                        <!-- Paragraph taken from: https://www.greeka.com/epirus/parga/hotels/location-valtos/icons-experience/ -->
+                        <p class="details"><span>Location</span>: Valtos</p>
+                        <p class="details"><span>Rating</span>: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                        <p class="details"><span>Price</span>: 70&euro;/night for an adult</p>
+                        <p class="details"><a href="https://www.jet2holidays.com/greece/parga/parga-town/icons-experience" target="_blank">More information and booking details</a></p>
+                    </div>
+
+                    <div class="hotel" data-price="60" data-location="lichnos" data-rating="3">
+                        <img src="./images/hotel-kiperi.jpg" alt="Kiperi Exclusive Suites">
+                        <p class="flag"><i class="fa-solid fa-circle-exclamation"></i> Great Deal <i class="fa-solid fa-circle-exclamation"></i></p>
+                        <h3>Kiperi Exclusive</h3>
+                        <p>Surrounded by olive groves and a lush green natural landscape, Kiperi Exclusive offers an idyllic location that is not only peaceful but also close to the beach and the center of Parga. This minimalist hotel blends harmoniously with the environment and becomes the perfect place to catch a sunset in Parga. It has a cozy atmosphere and a simple, yet elegant interior design.</p>
+                        <!-- Paragraph taken from: https://www.greeka.com/epirus/parga/hotels/location-lichnos/kiperi-exclusive/ -->
+                        <p class="details"><span>Location</span>: Lichnos</p>
+                        <p class="details"><span>Rating</span>: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                        <p class="details"><span>Price</span>: 60&euro;/night for an adult</p>
+                        <p class="details"><a href="https://www.kiperiexclusive.com/en" target="_blank">More information and booking details</a></p>
+                    </div>
+
+                    <div class="hotel" data-price="100" data-location="town" data-rating="4">
+                        <img src="./images//hotel-alfa.jpg" alt="Alfa Hotel">
+                        <p class="flag"><i class="fa-solid fa-circle-exclamation"></i> Great Deal <i class="fa-solid fa-circle-exclamation"></i></p>
+                        <h3>Alfa</h3>
+                        <p>Alfa Hotel offers luxurious accommodation in Parga, not far from the sea, and the local waterfront facilities. It provides elegantly decorated double or twin rooms and suites with a modern design that are full of amenities, in a truly calming environment. The minimalist look of the rooms, as well as the soft materials and lighting aim at making all guests feel comfortable enough to feel like home.</p>
+                        <!-- Paragraph taken from: https://www.greeka.com/epirus/parga/hotels/location-town/alfa/ -->
+                        <p class="details"><span>Location</span>: Town</p>
+                        <p class="details"><span>Rating</span>: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                        <p class="details"><span>Price</span>: 100&euro;/night for an adult</p>
+                        <p class="details"><a href="https://www.alfahotelparga.com" target="_blank">More information and booking details</a></p>
+                    </div>
+
+                    <div class="hotel" data-price="65" data-location="lichnos" data-rating="4">
+                        <img src="./images//hotel-liberte.jpg" alt="Liberte Maisonettes">
+                        <p class="flag"><i class="fa-solid fa-circle-exclamation"></i> Great Deal <i class="fa-solid fa-circle-exclamation"></i></p>
+                        <h3>Liberte</h3>
+                        <p>A sophisticated, minimalist design makes the modern Liberte Maisonettes stand out. This resort is located a few minutes away from the beach on foot and about 1.5 kilometers away from the center of Parga. Both luxurious and budget-friendly options are offered, with nice views of the hotel's pool area, garden, or the mountains.</p>
+                        <!-- Paragraph taken from: https://www.greeka.com/epirus/parga/hotels/location-lichnos/liberte/ -->
+                        <p class="details"><span>Location</span>: Lichnos</p>
+                        <p class="details"><span>Rating</span>: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                        <p class="details"><span>Price</span>: 65&euro;/night for an adult</p>
+                        <p class="details"><a href="https://www.booking.com/hotel/gr/villa-kyperi-parga.en-gb.html" target="_blank">More information and booking details</a></p>
+                    </div>
+
+                    <div class="hotel" data-price="130" data-location="lichnos" data-rating="4">
+                        <img src="./images//hotel-salvator.jpg" alt="Salvator Villas">
+                        <p class="flag"><i class="fa-solid fa-circle-exclamation"></i> Great Deal <i class="fa-solid fa-circle-exclamation"></i></p>
+                        <h3>Salvator</h3>
+                        <p>Salvator Villas & Spa Hotel is surrounded by dense vegetation and is located close to the center of Parga Town, in a quiet and calm area. Its traditional architecture is combined with a modern interior, with luxurious facilities and colorful details for an avant-garde touch. This amazing resort offers stunning views of the mountains and the sea.</p>
+                        <!-- Paragraph taken from: https://www.greeka.com/epirus/parga/hotels/location-lichnos/salvator/ -->
+                        <p class="details"><span>Location</span>: Lichnos</p>
+                        <p class="details"><span>Rating</span>: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                        <p class="details"><span>Price</span>: 130&euro;/night for an adult</p>
+                        <p class="details"><a href="https://www.salvator.gr" target="_blank">More information and booking details</a></p>
+                    </div>
+
+                    <div class="hotel" data-price="45" data-location="town" data-rating="2">
+                        <img src="./images/hotel-galini.jpg" alt="Galini Hotel">
+                        <p class="flag"><i class="fa-solid fa-circle-exclamation"></i> Great Deal <i class="fa-solid fa-circle-exclamation"></i></p>
+                        <h3>Galini</h3>
+                        <p>Centrally located in Parga, family-run Hotel Galini is a 2-minute walk from the beach and offers free Wi-Fi and breakfast. It features rooms with a balcony overlooking the scenic town and the Medieval castle or the lemon tree gardens. Restaurants, bars and shops are within 200 m from the hotel.</p>
+                        <!-- Paragraph taken from: https://www.booking.com/hotel/gr/galini-parga.en-gb.html -->
+                        <p class="details"><span>Location</span>: Town</p>
+                        <p class="details"><span>Rating</span>: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                        <p class="details"><span>Price</span>: 45&euro;/night for an adult</p>
+                        <p class="details"><a href="https://www.galiniparga.com/" target="_blank">More information and booking details</a></p>
+                    </div>
+
+                    <p id="message">No hotels available for the current selection!</p>
+                </div>
+            </div>
+
+            <div id="footer-parent">
+                <footer id="footer">
+                    <p>Learn more about Parga and book your holiday now <a href="https://www.greeka.com/epirus/parga/" target="_blank">here</a></p>
+                    <p>Created by Denis-Mihai Dinu | <a href="mailto:denis-mihai_dinu@ucdconnect.ie">denis-mihai_dinu@ucdconnect.ie</a></p>
+                </footer>
+            </div>
+        </div>
+        
+        <script src="responsive-navbar.js"></script>
+        <script src="travel-info-script.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,70 @@
+#container
+{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 0.4fr;
+    grid-template-areas:"navbar"
+                        "buttons"
+                        "main"
+                        "footer";
+}
+
+#navbar
+{
+    grid-area:navbar;
+}
+
+#footer-parent
+{
+    grid-area:footer;
+    margin-top:2%;
+}
+
+.map
+{
+    width:75%;
+    margin:2% auto 0;
+    display:none;
+}
+
+.active-map
+{
+    grid-area:main;
+}
+
+#map-hotels
+{
+    display:block;
+}
+
+#buttons
+{
+    background-color: #62a8ac;
+    text-align:center;
+    grid-area: buttons;
+}
+
+button
+{
+    font-size:1.5em;
+    background-color: #62a8ac;
+    margin-right:2%;
+}
+
+.active-btn
+{
+    background-color: aliceblue;
+    color:black;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.active-btn:hover
+{
+    background-color: aliceblue;
+}
+
+iframe
+{
+    width:100%;
+}

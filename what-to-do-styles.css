@@ -1,0 +1,310 @@
+#container
+{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 0.4fr;
+    grid-template-areas: "navbar"
+                         "buttons"
+                         "main"
+                         "footer";
+}
+
+#buttons
+{
+    background-color: #62a8ac;
+    text-align:center;
+    grid-area: buttons;
+}
+
+button
+{
+    font-size:1.5em;
+    background-color: #62a8ac;
+    margin-right:2%;
+}
+
+.active-btn
+{
+    background-color: aliceblue;
+    color:black;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.active-btn:hover
+{
+    background-color: aliceblue;
+}
+
+#navbar
+{
+    grid-area: navbar;
+}
+
+#footer-parent
+{
+    grid-area: footer;
+    margin-top:2%;
+}
+
+.content
+{
+    width:75%;
+    margin:auto;
+    display:none;
+}
+
+.active-content
+{
+    grid-area: main;
+}
+
+#beaches
+{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:"description-beaches"
+                        "beach1"
+                        "beach2"
+                        "beach3";
+}
+
+#description-beaches
+{
+    grid-area: description-beaches;
+}
+
+#beach1
+{
+    grid-area: beach1;
+}
+
+#beach2
+{
+    grid-area: beach2;
+}
+
+#beach3
+{
+    grid-area: beach3;
+}
+
+#beach1, #beach2, #beach3
+{
+    margin-bottom:2%;
+}
+
+#beach1>img, #beach3>img
+{
+    float:right;
+    width:40%;
+    height:auto;
+    margin-left:2%;
+}
+
+#beach2>img
+{
+    float:left;
+    width:40%;
+    height:auto;
+    margin-right:2%;
+}
+
+#sightseeing
+{
+    grid-template-columns: 1fr;
+    grid-template-rows:auto auto auto auto;
+    grid-template-areas:"description-sightseeing"
+                        "sight1"
+                        "sight2"
+                        "sight3";
+}
+
+#description-sightseeing
+{
+    grid-area:description-sightseeing;
+}
+
+#sight1
+{
+    grid-area:sight1;
+}
+
+#sight2
+{
+    grid-area:sight2;
+}
+
+#sight3
+{
+    grid-area:sight3;
+}
+
+#history
+{
+    display:none;
+}
+
+#show, #hide
+{
+    font-size:1em;
+    background-color: aliceblue;
+    color:#50858b;
+    text-decoration: underline;
+}
+
+#show:hover, #hide:hover
+{
+    padding:10px;
+    color:black;
+}
+
+#sight1>img
+{
+    width:50%;
+    height:auto;
+    float:left;
+}
+
+#castle-images, #watersport-images
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2%;
+}
+
+#watersport-images
+{
+    margin-bottom: 5%;
+}
+
+#sight2>img
+{
+    float:right;
+    margin-left:2%;
+}
+
+#sight3>img
+{
+    float:left;
+    margin-right:2%;
+}
+
+#sight2>img, #sight3>img
+{
+    width:40%;
+    height:auto;
+}
+
+#sight1, #sight2, #sight3
+{
+    margin-bottom:2%;
+}
+
+#food>div
+{
+    border:3px solid gray;
+    border-radius:10px;
+    overflow: auto;
+    padding:2%;
+    margin-bottom:2%;
+}
+
+#food>div>img
+{
+    float:right;
+    width:40%;
+    height:auto;
+    margin:2%;
+}
+
+
+#shopping-description
+{
+    margin-bottom:3%;
+}
+
+#soap
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2%;
+}
+
+#soap>p
+{
+    margin:auto;
+}
+
+#boats>img
+{
+    float:right;
+    width:40%;
+    height:auto;
+    margin-left:2%;
+}
+
+
+@media only screen and (max-width:1200px)
+{
+    #beaches img
+    {
+        width:50%;
+    }
+
+    #beaches h3, #sightseeing h3
+    {
+        margin-top: 0;
+    }
+
+    #sight2>img, #sight3>img
+    {
+        width:50%;
+    }
+
+}
+
+@media only screen and (max-width:1110px)
+{
+    #food>div>img
+    {
+        width:100%;
+        margin:0;
+    }
+
+}
+
+@media only screen and (max-width:900px)
+{
+    #beaches img, #sightseeing img
+    {
+        width:100%;
+    }
+
+    #castle-images, #watersport-images
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap:2%;
+    }
+
+    #soap
+    {
+        grid-template-columns: 1fr;
+    }
+
+    #boats>img
+    {
+        width:50%;
+    }
+
+}
+
+@media only screen and (max-width:600px)
+{
+    #boats>img
+    {
+        display:none;
+    }
+}
